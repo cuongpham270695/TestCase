@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    const num1 = 17;
+    const num2 = 34;
+    const num3 = 96;
+
+    function isSquare(num) {
+        return num > 0 && Math.sqrt(num) % 1 === 0;
+    }
+
+    function isFibonacci(num) {
+        return isSquare(5 * Math.pow(num, 2) + 4) || isSquare(5 * Math.pow(num, 2) - 4);
+    }
+
+    console.log(isFibonacci(num1));
+    console.log(isFibonacci(num2));
+    console.log(isFibonacci(num3));
+</script>
+</body>
+</html>
